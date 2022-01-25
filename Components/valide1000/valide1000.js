@@ -9,7 +9,7 @@ function valide1000(code) {
     }
   }
   for (let index = position1 + 1; index < position2; index++) {
-    if (code[index] % 2 == 0) return true;
+    if (code[index] % 2 == 0 && code[index] !== 0) return true;
   }
   return false;
 }
